@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NetBSD-current Packet Forwarding (amd64) / IPv4</title>
+    <meta name="copyright" content="(C) Internet Initiative Japan Inc." />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style rel="stylesheet" type="text/css">
+     .card {
+       margin: 10px 0;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NetBSD-current Packet Forwarding (amd64)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="/iigraph-pages/bridge/">Bridge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/iigraph-pages/ipv4/">IPv4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/iigraph-pages/ipv6/">IPv6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/iigraph-pages/l2tpipsec/">L2TP/IPsec</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+      <div class="contents-container" style="margin-top:66px;">
+        <h1>IPv4</h1>
+<!-- 1 CPU -->
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        1 cpu (bit/sec)
+      </div>
+      <div class="card-body">
+       <iframe src="https://app.machinist.iij.jp/charts/#/b4a4f0fd90014af0eeef4e70f5ff1c65?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        1 cpu (packet/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/a666625931c7c440ef11d344d1e0c96b?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 1 CPU -->
+
+<!-- 2 CPU -->
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        2 cpu (bit/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/615a6f4a913155fb01c7a4a76aaed5e1?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        2 cpu (packet/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/a4f04a4688eaa75ffea8dfbc600bba3b?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2 CPU -->
+
+<!-- 3 CPU -->
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        3 cpu (bit/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/05a666ec8809445ca0f3fa0e04cf1b3d?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        3 cpu (packet/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/8e0ab32dc8a885bead5117579258bf67?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 3 CPU -->
+
+<!-- 4 CPU -->
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        4 cpu (bit/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/92539709e4d603770858dbc611b19e42?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        4 cpu (packet/sec)
+      </div>
+      <div class="card-body">
+        <iframe src="https://app.machinist.iij.jp/charts/#/af2dae883d42a471082138dc41e709ef?toolbar=false&amp;legend=true&amp;type=lineChart&amp;period=month&amp;to=&amp;reload=" frameborder="0" scrolling="no" width="100%" height="400"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4 CPU -->
+
+      </div>
+    </div>
+  </body>
+</html>
